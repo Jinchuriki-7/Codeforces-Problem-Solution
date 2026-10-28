@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define sami() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define endl '\n'
+#define ll long long
+
+void ami(){
+    int x;
+    cin>>x;
+
+    int n,a,b;
+    while(x--){
+        cin>>n>>a>>b;
+
+        if(n==a && n==b){
+            cout<<"YES"<<endl;
+        }
+        else if((a+b)<=n-2){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+}
+
+int main(){
+    sami();
+
+    ami();
+
+    return 0;
+}
